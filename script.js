@@ -1,7 +1,7 @@
 // BOM challenge
 let addBtn = document.querySelector("form input[type = 'submit']");
 let taskInput = document.querySelector("form input[name = 'add']");
-let tasksDiv = document.querySelector(".tasks");
+let tasksDiv = document.querySelector(".tasks-Div");
 let errDiv = document.querySelector(".err");
 let tasksArr = [];
 window.onload = function () {
