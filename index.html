@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOM challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family:Rubik ;
+        src: url(./Rubik/Rubik-VariableFont_wght.ttf);
+      }
+      body {
+        font-family: Rubik;
+      }
+      .container {
+        width: 500px;
+        margin: 50px auto 0;
+      }
+      @media(max-width : 768px){
+        .container {
+          width: 100%;
+          margin-left: 50px auto ; 
+        }
+      }
+      .container .add-task form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        background-color: #eee;
+        padding: 10px;
+      }
+      .container .add-task form input[name="add"] {
+        flex: 1;
+        margin-right: 10px;
+        border-radius: 7px;
+        border: none;
+        padding-left: 10px;
+      }
+      .container .add-task form input {
+        height: 30px;
+        font-size: 18px;
+      }
+      .container .add-task form input[type="submit"] {
+        background-color: red;
+        border: none;
+        border-radius: 7px;
+        text-transform: capitalize;
+        padding: 2px 7px;
+        cursor: pointer;
+        /* font-family: Rubik; */
+      }
+      .container .tasks {
+        background-color: #51d0de;
+        padding: 10px;
+      }
+      .err{
+        color: red;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="add-task">
+        <form action="">
+          <input type="text" name="add" placeholder="Add Task Here" />
+          <input type="submit" value="add" />
+        </form>
+        <div class="err"></div>
+      </div>
+      <div class="tasks">
+        <h3>Tasks</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
